@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<order
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="orderSchema.xsd">
+    <total>45.00</total>
+    <order-number>57822394</order-number>
+    <items>
+        <!-- at least one item -->
+        <item>
+            <unit-price>10.0</unit-price>
+            <amount>2</amount>
+            <order-number>42</order-number>
+            <total-price>20.0</total-price> <!-- optional -->
+        </item>
+        <item>
+            <unit-price>98.0</unit-price>
+            <amount>1</amount>
+            <order-number>24</order-number>
+            <total-price>98.0</total-price>
+        </item>
+    </items>
+    <!-- exactly two addresses -->
+    <address type="shipping">
+        <first-name>Max</first-name>
+        <last-name>Mustermann</last-name>
+        <street>Musterstrasse</street>
+        <house-number>1</house-number>
+        <zip>23456</zip>
+        <town>Muster</town>
+    </address>
+    <address type="billing">
+        <title>Dr.</title> <!-- optional -->
+        <first-name>Anna</first-name>
+        <last-name>Anders</last-name>
+        <street>Anderestraße</street>
+        <house-number>7</house-number>
+        <zip>89012</zip>
+        <town>Anderswo</town>
+    </address>
+</order>
